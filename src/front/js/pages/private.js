@@ -16,7 +16,7 @@ export const Private = () => {
                     store.token ? 
                     <>
                         <div className="alert alert-success" role="alert">
-                            <h4 className="alert-heading">Hellooo!</h4>
+                            <h4 className="alert-heading">Haz iniciado sesion con exito!  </h4>
                             <p>¡Bienvenido a tu cuenta!</p>
                             <p className="mb-0">Recuerda cerrar tu sesión antes de irte</p>
                         </div>
@@ -24,8 +24,7 @@ export const Private = () => {
                     :
                     <>
                         <div class="alert alert-danger" role="alert">
-                            <h4 class="alert-heading">Buuuu!</h4>
-                            <p>¿No enviaste bien tus datos?</p>
+                            <p>Algo ha fallado en los datos</p>
                             <p class="mb-0">¡Vuelve al Login e intenta de nuevo!</p>
                         </div>
                         {navigate("/login")}
